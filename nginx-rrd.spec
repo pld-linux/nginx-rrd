@@ -5,7 +5,7 @@ Version:	0.1.2
 Release:	0.1
 License:	GPL
 Group:		Applications/WWW
-Source0:	http://www.nginx.eu/nginx-rrf/%{name}-%{version}.tgz
+Source0:	http://www.nginx.eu/nginx-rrd/%{name}-%{version}.tgz
 # Source0-md5:	738d5ab1d04a3ff4679318abcea6caeb
 URL:		http://www.nginx.eu/
 BuildRequires:	rpmbuild(macros) >= 1.268
