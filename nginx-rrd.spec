@@ -5,12 +5,12 @@ Version:	0.1.2
 Release:	0.1
 License:	GPL
 Group:		Applications/WWW
-Source0:	http://www.nginx.eu/%{name}/%{name}-%{version}.tgz
+Source0:	http://www.nginx.eu/nginx-rrf/%{name}-%{version}.tgz
 # Source0-md5:	738d5ab1d04a3ff4679318abcea6caeb
 URL:		http://www.nginx.eu/
 BuildRequires:	rpmbuild(macros) >= 1.268
 Requires:	crondaemon
-Requires:	perl-libwww	
+Requires:	perl-libwww
 Requires:	perl-rrdtool
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -19,9 +19,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_wwwdir		/home/services/httpd/html
 
 %description
-Produce RRD graphs for data recived from nginx webserver.
-Nginx server must be configured with --with-http_stub_status_module 
-option and have defined /nginx_status location
+Produce RRD graphs for data recived from nginx webserver. Nginx server
+must be configured with --with-http_stub_status_module option and have
+defined /nginx_status location
 
 %description -l pl.UTF-8
 Tworzenie wykresów z danych RRD tworzonych przez moduł mod_rrdtool
