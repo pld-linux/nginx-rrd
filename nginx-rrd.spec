@@ -1,12 +1,12 @@
 Summary:	Produce RRD graphs for nginx
 Summary(pl.UTF-8):	Tworzenie wykresów RRD dla nginx
 Name:		nginx-rrd
-Version:	0.1.2
+Version:	0.1.3
 Release:	0.1
 License:	GPL
 Group:		Applications/WWW
 Source0:	http://www.nginx.eu/nginx-rrd/%{name}-%{version}.tgz
-# Source0-md5:	738d5ab1d04a3ff4679318abcea6caeb
+# Source0-md5:	b62f1e48659cc989ae5f1afa1d063c19
 URL:		http://www.nginx.eu/
 BuildRequires:	rpmbuild(macros) >= 1.268
 Requires:	crondaemon
@@ -40,6 +40,7 @@ install usr/sbin/nginx-collect $RPM_BUILD_ROOT%{_sbindir}/nginx-collect
 install usr/sbin/nginx-collect.pl $RPM_BUILD_ROOT%{_sbindir}/nginx-collect.pl
 install usr/sbin/nginx-graph $RPM_BUILD_ROOT%{_sbindir}/nginx-graph
 install usr/sbin/nginx-graph.pl $RPM_BUILD_ROOT%{_sbindir}/nginx-graph.pl
+install html/index.php $RPM_BUILD_ROOT%{_wwwdir}/index.php
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -53,3 +54,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_sbindir}/nginx-graph
 %attr(755,root,root) %{_sbindir}/nginx-graph.pl
 %dir %attr(775,root,stats) %{_appdir}
+%{_wwwdir}/index.php
