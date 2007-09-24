@@ -1,12 +1,12 @@
 Summary:	Produce RRD graphs for nginx
 Summary(pl.UTF-8):	Tworzenie wykresów RRD dla nginx
 Name:		nginx-rrd
-Version:	0.1.3
+Version:	0.1.4
 Release:	0.1
 License:	GPL
 Group:		Applications/WWW
 Source0:	http://www.nginx.eu/nginx-rrd/%{name}-%{version}.tgz
-# Source0-md5:	b62f1e48659cc989ae5f1afa1d063c19
+# Source0-md5:	53c02c03cfcece0127206c0ef85a80a2
 URL:		http://www.nginx.eu/
 BuildRequires:	rpmbuild(macros) >= 1.268
 Requires:	crondaemon
