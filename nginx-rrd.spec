@@ -11,6 +11,9 @@ URL:		http://www.nginx.eu/
 BuildRequires:	rpmbuild(macros) >= 1.268
 Requires:	crondaemon
 Requires:	perl-libwww
+Requires:	perl-HTML-Parser
+Requires:	perl-HTML-Tagset
+Requires:	perl-URI
 Requires:	perl-rrdtool
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
